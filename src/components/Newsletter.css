@@ -1,0 +1,141 @@
+.next-allocation {
+    padding: 100px 4% 150px;
+    background-color: var(--bg-cream);
+}
+
+.next-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 80px;
+}
+
+.next-content {
+    flex: 1;
+}
+
+.next-title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.signup-form {
+    display: flex;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.email-input {
+    flex: 1;
+    background: transparent;
+    border: 1px solid var(--border-light);
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-family: var(--font-accent);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+    border-color: var(--accent-ochre);
+}
+
+.upcoming-list {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.02);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+}
+
+.upcoming-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dot.yellow {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-ochre);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-ochre);
+}
+
+.item-name {
+    font-family: var(--font-serif);
+    font-size: 18px;
+}
+
+.status {
+    font-family: var(--font-accent);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.upcoming-divider {
+    height: 1px;
+    background: var(--border-light);
+    margin: 25px 0;
+}
+
+@media (max-width: 1024px) {
+    .next-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .signup-form {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .next-allocation {
+        padding: 60px 5% 80px;
+    }
+
+    .next-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .upcoming-list {
+        padding: 25px;
+        width: 100%;
+    }
+
+    .item-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .next-title {
+        font-size: 20px;
+    }
+
+    .upcoming-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .email-input {
+        padding: 13px 15px;
+        font-size: 14px;
+    }
+}

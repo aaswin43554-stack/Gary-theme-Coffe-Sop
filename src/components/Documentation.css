@@ -1,0 +1,106 @@
+.documentation {
+    padding: 100px 4%;
+    background-color: var(--bg-cream);
+}
+
+.doc-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.doc-card {
+    position: relative;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.doc-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doc-card:hover .doc-bg {
+    transform: scale(1.1);
+}
+
+.doc-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+.doc-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.doc-subtitle {
+    font-size: 14px;
+    font-family: var(--font-accent);
+    opacity: 0.8;
+}
+
+.doc-action {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .doc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doc-card {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .documentation {
+        padding: 60px 5%;
+    }
+
+    .doc-card {
+        height: 260px;
+    }
+
+    .doc-content {
+        padding: 25px;
+    }
+
+    .doc-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doc-card {
+        height: 220px;
+    }
+
+    .doc-content {
+        padding: 20px;
+    }
+
+    .doc-title {
+        font-size: 18px;
+    }
+
+    .doc-subtitle {
+        font-size: 12px;
+    }
+}

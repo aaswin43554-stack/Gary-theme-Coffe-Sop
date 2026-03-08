@@ -1,0 +1,36 @@
+.stripe-checkout-form {
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.card-element-wrapper {
+    background: rgba(255, 255, 255, 0.05);
+    /* Matching the dark theme */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-element-wrapper:focus-within {
+    border-color: #5C5C5C;
+    /* A gray-accented color to look premium */
+    box-shadow: 0 0 0 1px #5C5C5C;
+}
+
+.card-error-msg {
+    color: #FA755A;
+    font-size: 0.875rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.btn-place-order:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: #4A5568 !important;
+}
+
+/* Base styles for standard project buttons should be inherited, 
+   but specific tweaks for form submission can go here */

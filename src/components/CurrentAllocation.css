@@ -1,0 +1,140 @@
+.current-estate {
+    padding: 100px 4%;
+    background-color: var(--bg-cream);
+}
+
+.estate-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.estate-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.estate-title {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.estate-meta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    font-family: var(--font-accent);
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.dot {
+    opacity: 0.3;
+}
+
+.estate-card {
+    display: flex;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.estate-image {
+    flex: 1.5;
+    height: 500px;
+}
+
+.estate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.estate-description {
+    flex: 1;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.estate-description p {
+    font-size: 20px;
+    font-family: var(--font-serif);
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 1024px) {
+    .estate-card {
+        flex-direction: column;
+    }
+
+    .estate-image {
+        height: 350px;
+    }
+
+    .estate-description {
+        padding: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .estate-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .current-estate {
+        padding: 60px 5%;
+    }
+
+    .estate-header {
+        margin-bottom: 35px;
+    }
+
+    .estate-title {
+        font-size: 26px;
+    }
+
+    .estate-image {
+        height: 260px;
+    }
+
+    .estate-description {
+        padding: 30px 20px;
+        gap: 15px;
+    }
+
+    .estate-description p {
+        font-size: 16px;
+    }
+
+    .estate-meta {
+        font-size: 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .estate-title {
+        font-size: 22px;
+    }
+
+    .estate-image {
+        height: 210px;
+    }
+
+    .estate-description {
+        padding: 20px 15px;
+    }
+
+    .estate-description p {
+        font-size: 14px;
+    }
+}

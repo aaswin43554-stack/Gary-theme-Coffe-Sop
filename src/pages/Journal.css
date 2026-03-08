@@ -1,0 +1,246 @@
+.journal-page {
+    background-color: var(--bg-cream);
+    min-height: 100vh;
+}
+
+.journal-hero {
+    padding: 120px 4% 80px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.journal-label {
+    font-family: var(--font-accent);
+    color: var(--accent-ochre);
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.journal-title {
+    font-size: 56px;
+    color: var(--bg-dark);
+}
+
+.journal-list {
+    padding: 80px 4%;
+}
+
+.journal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.journal-item {
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.journal-item:hover {
+    transform: translateY(-5px);
+}
+
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: var(--font-accent);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.item-category {
+    color: var(--accent-ochre);
+    font-weight: 700;
+}
+
+.item-date {
+    color: rgba(60, 42, 33, 0.4);
+}
+
+.item-title {
+    font-size: 32px;
+    color: var(--bg-dark);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.item-excerpt {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(60, 42, 33, 0.7);
+    margin-bottom: 25px;
+}
+
+.item-link {
+    font-family: var(--font-accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--bg-dark);
+    border-bottom: 1.5px solid var(--accent-ochre);
+    padding-bottom: 4px;
+}
+
+.journal-cta {
+    padding: 100px 4%;
+    background-color: var(--bg-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    background-color: var(--accent-ochre);
+    color: var(--white);
+    border: none;
+    padding: 16px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.cta-btn:hover {
+    background-color: var(--accent-ochre);
+}
+
+.cta-form {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cta-email-input {
+    flex: 1;
+    min-width: 220px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
+    color: white;
+    font-family: var(--font-accent);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.cta-email-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.cta-email-input:focus {
+    border-color: var(--accent-ochre);
+}
+
+.cta-success {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-accent);
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 16px 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    animation: fadeIn 0.4s ease;
+}
+
+.cta-success-icon {
+    color: var(--accent-ochre);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .journal-hero {
+        padding: 110px 5% 50px;
+    }
+
+    .journal-title {
+        font-size: 38px;
+    }
+
+    .journal-list {
+        padding: 50px 5%;
+    }
+
+    .journal-container {
+        gap: 35px;
+    }
+
+    .journal-item {
+        padding: 30px;
+    }
+
+    .item-title {
+        font-size: 24px;
+    }
+
+    .journal-cta {
+        padding: 60px 5%;
+    }
+
+    .cta-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .journal-title {
+        font-size: 28px;
+    }
+
+    .journal-item {
+        padding: 20px;
+    }
+
+    .item-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item-title {
+        font-size: 20px;
+    }
+
+    .item-excerpt {
+        font-size: 13px;
+    }
+
+    .cta-content h3 {
+        font-size: 20px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 16px 20px;
+    }
+}

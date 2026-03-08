@@ -1,0 +1,373 @@
+.allocation-page {
+    background-color: var(--bg-cream);
+    min-height: 100vh;
+}
+
+.allocation-hero-minimal {
+    padding: 120px 4% 60px;
+    background-color: var(--bg-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.release-meta {
+    font-family: var(--font-accent);
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--accent-ochre);
+    margin-bottom: 20px;
+}
+
+.estate-name {
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.estate-details-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item .label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 8px;
+}
+
+.detail-item .value {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.allocation-details-section {
+    padding: 80px 4%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.allocation-info-card,
+.flavor-profile-refined {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.02);
+}
+
+.card-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--bg-dark);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info-item .label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(60, 42, 33, 0.4);
+}
+
+.flavor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.flavor-tag {
+    padding: 10px 20px;
+    border: 1px solid rgba(192, 130, 53, 0.3);
+    font-size: 11px;
+    color: var(--accent-ochre);
+    background: none;
+    font-family: var(--font-accent);
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.action-container {
+    text-align: center;
+}
+
+.reserve-button-large {
+    background-color: var(--accent-ochre);
+    color: var(--white);
+    border: none;
+    padding: 24px 60px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    transition: background 0.3s;
+}
+
+.reserve-button-large:hover {
+    background-color: #A66E29;
+}
+
+.below-fold-story {
+    padding: 100px 4%;
+    background-color: var(--bg-cream);
+    margin-top: 80px;
+}
+
+.story-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-image-placeholder {
+    height: 400px;
+    background-color: var(--bg-cream);
+    border-radius: 4px;
+}
+
+.story-content h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+
+.story-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(60, 42, 33, 0.7);
+}
+
+.variety-selection {
+    padding: 60px 4% 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.selection-title-main {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-ochre);
+    margin-bottom: 30px;
+}
+
+.variety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.variety-card {
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.variety-card-img {
+    width: 100%;
+    height: 260px;
+    background-color: #E6E6E6;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.variety-card-img img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.variety-card:hover .variety-card-img img {
+    transform: scale(1.05);
+}
+
+.variety-card-body {
+    padding: 24px;
+}
+
+.variety-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.variety-card.active {
+    border-color: var(--accent-ochre);
+    background-color: #E0E0E0;
+    box-shadow: 0 5px 15px rgba(192, 130, 53, 0.1);
+}
+
+.variety-id {
+    font-family: var(--font-accent);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: rgba(60, 42, 33, 0.4);
+    margin-bottom: 12px;
+}
+
+.variety-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--bg-dark);
+}
+
+.variety-sub {
+    font-size: 11px;
+    color: rgba(60, 42, 33, 0.45);
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.variety-price {
+    font-weight: 700;
+    color: var(--accent-ochre);
+    font-size: 15px;
+}
+
+.shipping-note {
+    font-size: 12px;
+    color: rgba(60, 42, 33, 0.4);
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.loading-screen {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-accent);
+    letter-spacing: 4px;
+    color: var(--accent-ochre);
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+
+    .details-container,
+    .story-container {
+        grid-template-columns: 1fr;
+    }
+
+    .variety-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .allocation-hero-minimal {
+        padding: 100px 5% 50px;
+    }
+
+    .estate-name {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    .estate-details-grid {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .allocation-details-section {
+        padding: 50px 5%;
+    }
+
+    .allocation-info-card,
+    .flavor-profile-refined {
+        padding: 25px;
+    }
+
+    .below-fold-story {
+        padding: 60px 5%;
+        margin-top: 40px;
+    }
+
+    .variety-selection {
+        padding: 40px 5% 0;
+    }
+
+    .variety-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .reserve-button-large {
+        padding: 18px 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .estate-name {
+        font-size: 28px;
+    }
+
+    .estate-details-grid {
+        gap: 16px;
+    }
+
+    .detail-item .value {
+        font-size: 12px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .variety-card-img {
+        height: 200px;
+    }
+
+    .variety-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .allocation-info-card,
+    .flavor-profile-refined {
+        padding: 20px;
+    }
+}

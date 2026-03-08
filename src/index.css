@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap');
+
+:root {
+    --bg-cream: #D6D6D6;
+    --bg-dark: #2F3136;
+    --accent-ochre: #5C5C5C;
+    --text-dark: #222222;
+    --text-muted: #666666;
+    --white: #ffffff;
+    --border-light: rgba(0, 0, 0, 0.1);
+
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    --font-accent: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Base fade-in animation */
+section {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-primary {
+    background-color: var(--accent-ochre);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid var(--text-dark);
+    padding: 12px 35px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: var(--text-dark);
+    color: white;
+}
+
+.section-label {
+    text-align: center;
+    font-family: var(--font-accent);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: var(--accent-ochre);
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-label::before,
+.section-label::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: var(--accent-ochre);
+    opacity: 0.3;
+}
+
+/* Global mobile improvements */
+@media (max-width: 768px) {
+    .btn-primary {
+        padding: 13px 28px;
+        font-size: 13px;
+    }
+
+    .btn-outline {
+        padding: 11px 24px;
+    }
+
+    /* Improve touch targets */
+    button,
+    a {
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-label {
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    .section-label::before,
+    .section-label::after {
+        width: 30px;
+    }
+}

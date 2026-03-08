@@ -1,0 +1,131 @@
+.philosophy {
+    padding: 100px 4%;
+    background-color: var(--bg-cream);
+}
+
+.philosophy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+}
+
+.phil-label {
+    font-family: var(--font-accent);
+    color: var(--accent-ochre);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.phil-title {
+    font-size: 48px;
+    color: var(--bg-dark);
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.phil-desc {
+    font-size: 16px;
+    color: rgba(60, 42, 33, 0.7);
+    margin-bottom: 20px;
+    max-width: 450px;
+}
+
+.phil-desc-small {
+    font-size: 14px;
+    color: rgba(60, 42, 33, 0.7);
+    margin-bottom: 40px;
+}
+
+.philosophy-btn {
+    background-color: transparent;
+    border: 1px solid var(--bg-dark);
+    padding: 14px 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.philosophy-btn:hover {
+    background-color: var(--bg-dark);
+    color: var(--white);
+}
+
+.phil-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.point-card {
+    background-color: var(--white);
+    padding: 40px;
+    border-left: 2px solid var(--accent-ochre);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.point-num {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--accent-ochre);
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.point-title {
+    font-size: 20px;
+    color: var(--bg-dark);
+    margin-bottom: 10px;
+}
+
+.point-desc {
+    font-size: 14px;
+    color: rgba(60, 42, 33, 0.6);
+}
+
+@media (max-width: 900px) {
+    .philosophy-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .philosophy {
+        padding: 60px 5%;
+    }
+
+    .phil-title {
+        font-size: 34px;
+    }
+
+    .point-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phil-title {
+        font-size: 28px;
+    }
+
+    .phil-desc {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .point-card {
+        padding: 20px;
+    }
+
+    .point-title {
+        font-size: 17px;
+    }
+}
