@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  preview: {
-    allowedHosts: ['www.oneestate.coffee', 'oneestate.coffee']
+  server: {
+    allowedHosts: [
+      'gary-theme-coffe-sop.onrender.com'
+    ]
   }
 })
